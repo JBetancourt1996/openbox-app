@@ -240,7 +240,6 @@ export default {
       tema1: [
         {
           id: 1,
-          img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fworldvectorlogo.com%2Flogo%2Felement-ui-1&psig=AOvVaw0Z0xDEiOsk7t2wuaA1PEb7&ust=1628702016704000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCND_0_75pvICFQAAAAAdAAAAABAP",
           text: "Hero Sections",
           text1: "9 Components",
         },
