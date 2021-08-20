@@ -29,19 +29,25 @@
         <div class="flex lg:hidden flex-1 justify-end">
           <div id="app">
             <nav class="main-nav">
-              <Burger></Burger>
+              <Burger>
+                <img
+                  src="../../images/burger.png"
+                  height="32"
+                  width="32"
+                  alt=""
+              /></Burger>
             </nav>
 
-            <Sidebar>
-              <ul class="sidebar-panel-nav">
+            <Sidebar class="">
+              <ul class="text-white font-semibold space-y-4">
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="#home">Documentation</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about">Pricing & FAQ</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">Sign in -></a>
                 </li>
               </ul>
             </Sidebar>
@@ -50,7 +56,7 @@
       </nav>
     </header>
     <div class="flex flex-wrap lg:justify-between py-4 lg:px-18 px-4">
-      <div class="bg-resd-200 lg:w-7/12 z-50">
+      <div class="bg-resd-200 lg:w-7/12">
         <div class="text-start mt-8">
           <p
             class="

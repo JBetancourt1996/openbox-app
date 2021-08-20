@@ -6,7 +6,25 @@
       v-if="isPanelOpen"
     ></div>
     <transition name="slide">
-      <div v-if="isPanelOpen" class="sidebar-panel">
+      <div
+        v-if="isPanelOpen"
+        class="
+          sidebar-panel
+          h-screen
+          overflow-y-auto
+          fixed
+          z-999
+          py-4
+          px-4
+          w-50
+          left-0
+          top-0
+          bg-gradient-to-r
+          from-gray-900
+          via-blue-800
+          to-blue-900
+        "
+      >
         <slot></slot>
       </div>
     </transition>
@@ -37,7 +55,6 @@ export default {
   transform: translateX(-100%);
   transition: all 150ms ease-in 0s;
 }
-
 .sidebar-backdrop {
   background-color: rgba(19, 15, 64, 0.4);
   width: 100vw;
@@ -46,17 +63,5 @@ export default {
   top: 0;
   left: 0;
   cursor: pointer;
-}
-
-.sidebar-panel {
-  overflow-y: auto;
-  background-color: #130f40;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  z-index: 999;
-  padding: 3rem 20px 2rem 20px;
-  width: 300px;
 }
 </style>
