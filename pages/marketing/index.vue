@@ -27,32 +27,25 @@
           <li class="">Sign in -></li>
         </ul>
         <div class="flex lg:hidden flex-1 justify-end">
-          <component :is="currentMenu" :right="side === 'left' ? true : false">
-            <a href="#">
-              <i class="fa fa-fw fa-star-o"></i>
-              <span>Favourites</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-fw fa-bell-o"></i>
-              <span>Alerts</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-fw fa-envelope-o"></i>
-              <span>Messages</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-fw fa-comment-o"></i>
-              <span>Comments</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-fw fa-bar-chart-o"></i>
-              <span>Analytics</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-fw fa-newspaper-o"></i>
-              <span>Reading</span>
-            </a>
-          </component>
+          <div id="app">
+            <nav class="main-nav">
+              <Burger></Burger>
+            </nav>
+
+            <Sidebar>
+              <ul class="sidebar-panel-nav">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </Sidebar>
+          </div>
         </div>
       </nav>
     </header>
@@ -149,20 +142,16 @@
 </template>
 
 <script>
-import slide from "../../components/Menu/slide";
-import Menu from "../../components/Menu";
+import Burger from "../../components/Menu/Burger.vue";
+import Sidebar from "../../components/Menu/Sidebar.vue";
 export default {
+  name: "app",
   components: {
-    slide,
-    Menu,
+    Burger,
+    Sidebar,
   },
   data() {
     return {
-      side: "left",
-      currentMenu: "slide",
-      menus: {
-        slide: { buttonText: "Slide" },
-      },
       tema1: [
         {
           id: 1,
@@ -171,15 +160,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    changeMenu(menu) {
-      this.currentMenu = menu.replace(/ +/g, "").toLowerCase();
-      return this.currentMenu;
-    },
-    changeSide(side) {
-      this.side = side;
-    },
   },
 };
 </script>
