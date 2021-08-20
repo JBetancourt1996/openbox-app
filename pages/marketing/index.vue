@@ -22,12 +22,37 @@
           <a href="">Tailwind UI Ecommerce is availeble now -> </a>
         </div>
         <ul class="text-white hidden lg:flex flex-1 justify-end gap-4">
-          <li class="flex-initial">Documentation</li>
-          <li class="flex-initial">Pricing & FAQ</li>
-          <li class="flex-initial">Sign in -></li>
+          <li class="">Documentation</li>
+          <li class="">Pricing & FAQ</li>
+          <li class="">Sign in -></li>
         </ul>
         <div class="flex lg:hidden flex-1 justify-end">
-          <img class="w-9 h-9" src="../../images/burger.png" alt="" />
+          <component :is="currentMenu" :right="side === 'left' ? true : false">
+            <a href="#">
+              <i class="fa fa-fw fa-star-o"></i>
+              <span>Favourites</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-fw fa-bell-o"></i>
+              <span>Alerts</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-fw fa-envelope-o"></i>
+              <span>Messages</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-fw fa-comment-o"></i>
+              <span>Comments</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-fw fa-bar-chart-o"></i>
+              <span>Analytics</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-fw fa-newspaper-o"></i>
+              <span>Reading</span>
+            </a>
+          </component>
         </div>
       </nav>
     </header>
@@ -124,9 +149,20 @@
 </template>
 
 <script>
+import slide from "../../components/Menu/slide";
+import Menu from "../../components/Menu";
 export default {
+  components: {
+    slide,
+    Menu,
+  },
   data() {
     return {
+      side: "left",
+      currentMenu: "slide",
+      menus: {
+        slide: { buttonText: "Slide" },
+      },
       tema1: [
         {
           id: 1,
@@ -135,6 +171,15 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    changeMenu(menu) {
+      this.currentMenu = menu.replace(/ +/g, "").toLowerCase();
+      return this.currentMenu;
+    },
+    changeSide(side) {
+      this.side = side;
+    },
   },
 };
 </script>
