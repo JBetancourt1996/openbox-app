@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="
-      bg-gradient-to-r
-      from-gray-900
-      via-gray-800
-      to-gray-700
-      lg:h-screen
-      h-full
-    "
-  >
+  <div class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700">
     <!-- header -->
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
       <nav class="flex items-center py-2 lg:mx-20 mx-5 lg:flex-wrap gap-4">
@@ -66,7 +57,7 @@
     </header>
     <div class="lg:inline-flex lg:mx-auto">
       <div class="lg:inline-flex py-4 lg:px-18 px-4">
-        <div class="bg-resd-200 lg:w-7/12">
+        <div class="lg:w-7/12">
           <div class="text-start mt-8">
             <p
               class="
@@ -203,11 +194,13 @@
         lg:inline-flex
         lg:justify-between
         lg:px-18
+        lg:space-y-0
         px-4
         lg:space-x-6
         text-white
         sa:space-y-6
         mt-4
+        mb-32
       "
     >
       <div class="flex-wrap text-start">
@@ -233,6 +226,23 @@
         </p>
       </div>
     </div>
+    <div class="lg:w-full sticky top-0">
+      <nav class="bg-white py-2">
+        <ul class="flex space-x-20 px-4 lg:px-18">
+          <li>Marketing</li>
+          <li>Aplication UI</li>
+          <li>
+            Ecommerce &nbsp; &nbsp; &nbsp;<a
+              href=""
+              class="hidden lg:inline-flex text-blue-600"
+            >
+              New</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div></div>
   </div>
 </template>
 
