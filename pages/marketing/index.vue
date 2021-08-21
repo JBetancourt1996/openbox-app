@@ -2,14 +2,14 @@
   <div class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700">
     <!-- header -->
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
-      <nav class="flex items-center py-2 lg:mx-20 mx-5 lg:flex-wrap gap-4">
+      <nav class="flex items-center py-2 md:mx-20 mx-5 md:flex-wrap gap-4">
         <div class="">
           <img src="../../images/logo-open.png" width="100" alt="" />
         </div>
         <div
           class="
             hidden
-            lg:flex
+            md:flex
             flex-wrap
             text-white
             border border-white
@@ -21,12 +21,12 @@
         >
           <a href="">Tailwind UI Ecommerce is availeble now -> </a>
         </div>
-        <ul class="text-white hidden lg:flex flex-1 justify-end gap-4">
+        <ul class="text-white hidden md:flex flex-1 justify-end gap-4">
           <li class="">Documentation</li>
           <li class="">Pricing & FAQ</li>
           <li class="">Sign in -></li>
         </ul>
-        <div class="flex lg:hidden flex-1 justify-end">
+        <div class="flex md:hidden flex-1 justify-end">
           <div id="app">
             <nav class="main-nav">
               <Burger>
@@ -55,13 +55,13 @@
         </div>
       </nav>
     </header>
-    <div class="lg:inline-flex lg:mx-auto">
-      <div class="lg:inline-flex py-4 lg:px-18 px-4">
-        <div class="lg:w-7/12">
+    <div class="md:inline-flex md:mx-auto">
+      <div class="md:inline-flex py-4 md:px-18 px-4">
+        <div class="md:w-7/12">
           <div class="text-start mt-8">
             <p
               class="
-                lg:text-
+                md:text-
                 text-white text-xs
                 font-semibold
                 tracking-wide
@@ -90,9 +90,9 @@
             <div
               class="
                 flex flex-wrap
-                lg:space-x-16
+                md:space-x-16
                 space-x-6
-                lg:mt-8
+                md:mt-8
                 text-white
                 font-medium
                 justify-start
@@ -141,7 +141,7 @@
               examples in the categories you're most curious about.
             </h1>
           </div>
-          <div class="mt-4 lg:inline-flex text-center space-x-8">
+          <div class="mt-4 md:inline-flex text-center space-x-8">
             <a href="#">
               <div
                 class="
@@ -179,7 +179,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center lg:w-5/12 mt-8 relative">
+      <div class="text-center md:w-5/12 mt-8 relative">
         <div class="flex-wrap">
           <div class="h-32 w-32 mx-auto">
             <img src="../../images/main-avatar.png" alt="" />
@@ -191,12 +191,12 @@
     <div
       class="
         bg-transparent
-        lg:inline-flex
-        lg:justify-between
-        lg:px-18
-        lg:space-y-0
+        md:inline-flex
+        md:justify-between
+        md:px-18
+        md:space-y-0
         px-4
-        lg:space-x-6
+        md:space-x-6
         text-white
         sa:space-y-6
         mt-4
@@ -226,15 +226,26 @@
         </p>
       </div>
     </div>
-    <div class="lg:w-full sticky top-0">
-      <nav class="bg-white py-2">
-        <ul class="flex space-x-20 px-4 lg:px-18">
+    <div class="flex sticky bg-red-900">
+      <nav class="bg-white w-full py-2">
+        <ul
+          class="
+            flex
+            space-x-10
+            text-xs
+            md:text-sm
+            md:space-x-20
+            px-4
+            md:px-18
+            flex-wrap
+          "
+        >
           <li>Marketing</li>
           <li>Aplication UI</li>
           <li>
             Ecommerce &nbsp; &nbsp; &nbsp;<a
               href=""
-              class="hidden lg:inline-flex text-blue-600"
+              class="hidden md:inline-flex text-blue-600"
             >
               New</a
             >
