@@ -9,7 +9,7 @@
         <div
           class="
             hidden
-            md:flex
+            lg:flex
             flex-wrap
             text-white
             border border-white
@@ -57,7 +57,7 @@
     </header>
     <div class="md:inline-flex md:mx-auto">
       <div class="md:inline-flex py-4 md:px-18 px-4">
-        <div class="md:w-7/12">
+        <div class="flex-grow">
           <div class="text-start mt-8">
             <p
               class="
