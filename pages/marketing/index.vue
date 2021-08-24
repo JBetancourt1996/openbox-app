@@ -3,13 +3,13 @@
     <!-- header -->
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
       <nav class="flex items-center py-2 md:mx-20 mx-5 md:flex-wrap gap-4">
-        <div class="">
+        <div class="animate-pulse">
           <img src="../../images/logo-open.png" width="100" alt="" />
         </div>
         <div
           class="
             hidden
-            lg:flex
+            xs::flex
             flex-wrap
             text-white
             border border-white
@@ -29,7 +29,7 @@
         <div class="flex md:hidden flex-1 justify-end">
           <div id="app">
             <nav class="main-nav">
-              <Burger>
+              <Burger class="animate-bounce">
                 <img
                   src="../../images/burger.png"
                   height="32"
