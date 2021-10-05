@@ -3,7 +3,7 @@
     <!-- header -->
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
       <nav class="flex items-center py-2 md:mx-20 mx-5 md:flex-wrap gap-4">
-        <div class="animate-pulse">
+        <div class="animatse-pulse">
           <img src="../../images/logo-open.png" width="100" alt="" />
         </div>
         <div
@@ -22,7 +22,7 @@
           <a href="">Tailwind UI Ecommerce is availeble now -> </a>
         </div>
         <ul class="text-white hidden md:flex flex-1 justify-end gap-4">
-          <li class="">Documentation</li>
+          <NuxtLink to="/pages/documentation"> Documentation</NuxtLink>
           <li class="">Pricing & FAQ</li>
           <li class="">Sign in -></li>
         </ul>
@@ -41,7 +41,9 @@
             <Sidebar class="">
               <ul class="text-white font-semibold space-y-4">
                 <li>
-                  <a href="#home">Documentation</a>
+                  <nuxt-link to="/documentation/prueba"
+                    >Documentation</nuxt-link
+                  >
                 </li>
                 <li>
                   <a href="#about">Pricing & FAQ</a>
