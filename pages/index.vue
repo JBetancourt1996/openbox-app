@@ -4,7 +4,7 @@
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
       <nav class="flex items-center py-2 md:mx-20 mx-5 md:flex-wrap gap-4">
         <div class="animatse-pulse">
-          <img src="../../images/logo-open.png" width="100" alt="" />
+          <img src="../images/logo-open.png" width="100" alt="" />
         </div>
         <div
           class="
@@ -30,20 +30,14 @@
           <div id="app">
             <nav class="main-nav">
               <Burger class="animate-bounce">
-                <img
-                  src="../../images/burger.png"
-                  height="32"
-                  width="32"
-                  alt=""
+                <img src="../images/burger.png" height="32" width="32" alt=""
               /></Burger>
             </nav>
 
             <Sidebar class="">
               <ul class="text-white font-semibold space-y-4">
                 <li>
-                  <nuxt-link to="/documentation/prueba"
-                    >Documentation</nuxt-link
-                  >
+                  <nuxt-link to="/documentation">Documentation</nuxt-link>
                 </li>
                 <li>
                   <a href="#about">Pricing & FAQ</a>
@@ -78,8 +72,7 @@
               class="
                 order-1
                 text-3xl
-                sm:text-5xl
-                sm:leading-none
+                sm:text-5xl sm:leading-none
                 font-extrabold
                 tracking-tight
                 text-white
@@ -102,7 +95,7 @@
             >
               <span class=""
                 ><img
-                  src="../../images/html.png"
+                  src="../images/html.png"
                   width="32"
                   height="32"
                   alt=""
@@ -111,7 +104,7 @@
 
               <span class=""
                 ><img
-                  src="../../images/main-avatar.png"
+                  src="../images/main-avatar.png"
                   width="32"
                   height="32"
                   alt=""
@@ -121,7 +114,7 @@
 
               <span class=""
                 ><img
-                  src="../../images/vue.png"
+                  src="../images/vue.png"
                   width="32"
                   height="32"
                   alt=""
@@ -184,7 +177,7 @@
       <div class="text-center md:w-5/12 mt-8 relative">
         <div class="flex-wrap">
           <div class="h-32 w-32 mx-auto">
-            <img src="../../images/main-avatar.png" alt="" />
+            <img src="../images/main-avatar.png" alt="" />
           </div>
         </div>
       </div>
@@ -193,10 +186,7 @@
     <div
       class="
         bg-transparent
-        md:inline-flex
-        md:justify-between
-        md:px-18
-        md:space-y-0
+        md:inline-flex md:justify-between md:px-18 md:space-y-0
         px-4
         md:space-x-6
         text-white
@@ -266,8 +256,8 @@
 </template>
 
 <script>
-import Burger from "../../components/Menu/Burger.vue";
-import Sidebar from "../../components/Menu/Sidebar.vue";
+import Burger from "../components/Menu/Burger.vue";
+import Sidebar from "../components/Menu/Sidebar.vue";
 export default {
   name: "app",
   components: {

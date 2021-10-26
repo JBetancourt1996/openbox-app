@@ -10,5 +10,5 @@ export const mutations = {
     },
     toggleNav() {
         store.isNavOpen = !store.isNavOpen;
-    }
+    },
 };
