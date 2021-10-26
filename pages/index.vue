@@ -4,7 +4,7 @@
     <header class="bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900">
       <nav class="flex items-center py-2 md:mx-20 mx-5 md:flex-wrap gap-4">
         <div class="animatse-pulse">
-          <img src="../images/logo-open.png" width="100" alt="" />
+          <img src="" width="100" alt="" />
         </div>
         <div
           class="
